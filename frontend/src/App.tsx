@@ -4,7 +4,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 
-const API = "patient-calendar-production.up.railway.app";
+const API = "https://patient-calendar-production.up.railway.app";
 
 interface Patient {
   id: number;
