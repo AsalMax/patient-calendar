@@ -4,7 +4,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 
-const API = "http://localhost:8000";
+const API = "patient-calendar-production.up.railway.app";
 
 interface Patient {
   id: number;
@@ -36,12 +36,6 @@ const MOTIVATIONS = [
   "Healing hands, organized days. ✨",
   "You chose this path because you care. Keep going. 🌿",
 ];
-
-const STATUS_COLORS: Record<string, string> = {
-  scheduled: "bg-blue-100 text-blue-700",
-  done:       "bg-green-100 text-green-700",
-  cancelled:  "bg-red-100 text-red-700",
-};
 
 export default function App() {
   const [patients, setPatients]             = useState<Patient[]>([]);
